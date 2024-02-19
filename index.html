@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trust-Travel</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .text-inter {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .text-raleway {
+      font-family: 'Raleway', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!--Navbar -->
+    <nav>
+      <div class="md:w-10/12 mx-auto w-full px-2 md:px-4">
+        <div class="navbar bg-transparent px-0 py-0 text-raleway my-2 md:my-5">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-3 pl-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-50 rounded-box w-52">
+                <li><a class="hover:bg-green-200">Home</a></li>
+                <li><a class="hover:bg-green-200">About</a></li>
+                <li><a class="hover:bg-green-200">Destination</a></li>
+                <li><a class="hover:bg-green-200">Search</a></li>
+              </ul>
+            </div>
+            <a class="lg:text-4xl md:text-3xl text-2xl font-extrabold cursor-pointer text-green-500">Trust-Travel</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-3 text-lg font-medium text-[#030712B2]">
+              <li>
+                <a class="hover:bg-green-200">Home</a>
+              </li>
+              <li><a class="hover:bg-green-200">About</a></li>
+              <li><a class="hover:bg-green-200">Destination</a></li>
+              <li><a class="hover:bg-green-200">Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a href="#section-booking"
+              class="btn text-xl font-bold space-x-1 flex items-center text-green-500 bg-green-50 border border-green-200 hover:bg-green-200">
+              <span>Bus</span>
+              <img src="images/bus-icon.png" alt= />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <section>
+      <div class="md:w-10/12 mx-auto w-full px-2 md:px-4">
+        <div class="hero min-h-[60vh] md:min-h-[75vh] rounded-xl md:rounded-3xl"
+          style="background-image: url(images/banner.png)">
+          <div class="hero-overlay bg-opacity-40 rounded-xl md:rounded-3xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-xl">
+              <h1 class="mb-5 text-4xl md:text-5xl text-raleway font-extrabold text-white">
+                End-to-End Travel with <br>
+                <span class="text-green-500">Trust-Travel</span>
+              </h1>
+              <p class="mb-5 text-base md:text-lg font-normal text-white">
+                Yes, you can run unit tests and view the results directly
+                within the app. The integrated testing features allow for a
+                streamlined.
+              </p>
+              <a href="#section-booking"
+                class="btn bg-green-500  text-xl text-raleway font-bold text-white mt-4 border-0 hover:bg-white hover:text-green-500 ">
+                Buy Ticket
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Cards -->
+    <section>
+      <div class="md:w-10/12 mx-auto w-full px-2 md:px-4 ">
+        <!-- Cards -->
+        <div
+          class="flex flex-col gap-6 md:gap-2 lg:justify-between justify-center md:flex-row max-w-xl md:max-w-6xl mx-auto md:-my-12 -my-6 px-10">
+          <!-- Card-01 -->
+          <div
+            class="flex py-8 md:py-5 px-10 md:px-2 rounded-2xl border-b-4 border-green-500 gap-6 md:gap-2 lg:gap-6 bg-white lg:px-5">
+            <img class="max-h-16   " src="images/people.png" alt="" />
+            <div class="flex flex-col gap-1">
+              <h3 class="font-bold text-2xl text-black md:text-2xl lg:text-4xl">
+                500k+
+              </h3>
+              <p class="text-lg font-normal md:text-base lg:text-lg">
+                Registered users
+              </p>
+            </div>
+          </div>
+          <!-- Card-02 -->
+          <div
+            class="flex py-8 md:py-5 px-10 md:px-2 rounded-2xl border-b-4 border-green-500 gap-6 md:gap-2 lg:gap-6 bg-white lg:px-5">
+            <img class="max-h-16" src="images/ticket-cupon.png" alt="" />
+            <div class="flex flex-col gap-1">
+              <h3 class="font-bold text-2xl text-black md:text-2xl lg:text-4xl">
+                1.7 lacks
+              </h3>
+              <p class="text-lg font-normal md:text-base lg:text-lg">
+                Tickets sold
+              </p>
+            </div>
+          </div>
+          <!-- Card-03 -->
+          <div
+            class="flex py-8 md:py-5 px-10 md:px-2 rounded-2xl border-b-4 border-green-500 gap-6 md:gap-2 lg:gap-6 bg-white lg:px-5">
+            <img class="max-h-16" src="images/stoppage.png" alt="" />
+            <div class="flex flex-col gap-1">
+              <h3 class="font-bold text-2xl text-black md:text-2xl lg:text-4xl">
+                80K+
+              </h3>
+              <p class="text-lg font-normal md:text-base lg:text-lg">
+                Rental partners
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- Coupons -->
+    <section>
+      <div class="md:w-10/12 mx-auto w-full px-2 md:px-4">
+        <!-- Heading -->
+        <div class="text-center mt-28 md:mt-32">
+          <h1 class="text-raleway font-bold text-3xl md:text-4xl">
+            Best offers for you
+          </h1>
+        </div>
+        <!-- Coupon List -->
+        <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-10 mt-12 max-w-xl md:max-w-full mx-auto">
+          <!-- Coupon 1 -->
+          <div class="bg-[#FFBF0F] flex justify-between items-center rounded-xl gap-2 px-8 py-0">
+            <div class="flex flex-col gap-1 text-left">
+              <h4 class="text-4xl font-black">15% OFF</h4>
+              <h5 class="text-lg font-semibold">on your next purchase</h5>
+              <p class="font-normal">use by February 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" class="h-full" />
+            <div class="flex flex-col gap-1 text-left">
+              <h5 class="text-raleway text-3xl font-bold">NEW15</h5>
+              <p class="text-raleway font-bold">Coupon Code</p>
+            </div>
+          </div>
+          <!-- Coupon 2 -->
+          <div class="bg-[#F78C9C] flex justify-between items-center rounded-xl gap-2 px-8 py-0">
+            <div class="flex flex-col gap-1 text-left">
+              <h4 class="text-4xl font-black">20% OFF</h4>
+              <h5 class="text-lg font-semibold">On your next purchase</h5>
+              <p class="font-normal">use by February 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" class="h-full" />
+            <div class="flex flex-col gap-1 text-left">
+              <h5 class="text-raleway text-3xl font-bold">Couple 20</h5>
+              <p class="text-raleway font-bold">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-10 md:mt-20">
+          <button
+            class="btn  border-green-200 bg-white hover:bg-green-400 hover:text-white text-xl text-raleway font-bold text-green-500  mt-4">
+            See All Offer
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Ticket  -->
+    <section id="section-booking" class="bg-slate-100 rounded-t-[100px] border-t-green-500 border-t-4 mt-32">
+      <div class="md:w-10/12 mx-auto w-full px-2 md:px-4">
+        <!-- Ticket Heading -->
+        <div class="text-center mt-28 md:mt-32 max-w-2xl mx-auto space-y-4">
+          <h1 class="text-raleway font-bold text-3xl md:text-4xl">
+            NO-Line Paribahan </h1>
+          <p class="font-normal">
+            Yes, you can run unit tests and view the results directly within
+            the app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- Ticket Bus -->
+        <div class="flex flex-col md:flex-row lg:flex-row justify-between items-center bg-white px-4 rounded-2xl mt-24">
+          <div class="flex-grow">
+            <div class="">
+              <div class="flex justify-between items-center">
+                <div class="flex gap-4 items-center">
+                  <div>
+                    <img src="images/bus-logo.png" alt="" />
+                  </div>
+                  <div class="flex flex-col justify-start gap-2">
+                    <h4 class="text-xl font-bold text-raleway lg:text-3xl">
+                      NO-Line Paribahan
+                    </h4>
+                    <p>Coach-009-WEB ! Economy</p>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="p-2 lg:p-4 rounded-lg text-sm lg:text-xl font-bold space-x-1 flex items-center text-green-500 bg-green-50 border border-green-200">
+                    <img src="images/seat-green.png" alt="" />
+                    <span id="available-seats">0</span>
+                    <span>Seats Left</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col bg-slate-100 p-2 rounded-xl mt-6">
+              <div class="flex justify-between p-4 border-b-2 border-dashed ">
+                <h4 class="text-raleway font-normal">Route</h4>
+                <h5 class="text-raleway font-semibold">Dhaka-Sylhet</h5>
+              </div>
+              <div class="flex justify-between p-4 border-b-2 border-dashed ">
+                <h4 class="text-raleway font-normal">Departure Time</h4>
+                <h5 class="text-raleway font-semibold">9:00 PM</h5>
+              </div>
+              <div class="flex justify-between p-4 flex-col md:flex-row gap-5">
+                <div class="p-3 bg-slate-200 rounded-sm">
+                  <p>Boarding Point - Laxmipur</p>
+                </div>
+                <div class="p-3 bg-slate-200 rounded-sm">
+                  <p>Dropping Point - Bogura</p>
+                </div>
+                <div class="p-3 bg-slate-200 rounded-sm">
+                  <p>Est. Time - 11 Hour</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="images/info-devider.png" alt="" class="h-full hidden md:block" />
+          </div>
+          <div>
+            <div class="flex flex-col items-center max-w gap-2 min-w-44">
+              <img src="images/fare.png" alt="" class="mb-2" />
+              <h3 class="text-raleway font-bold text-3xl">550 Taka</h3>
+              <p class="font-semibold text-xl text-raleway">Per Seat</p>
+            </div>
+          </div>
+        </div>
+        <!-- Ticket Form -->
+        <div
+          class="flex flex-col lg:flex-row justify-between gap-5 mt-20 bg-white p-8 rounded-3xl border-b-[100px] border-slate-100">
+          <div class="flex-grow p-4 px-8 rounded-lg max-lg:border-r-0 border-r-2 border-dashed ">
+            <h3 class="text-2xl text-raleway font-semibold text-black pb-4 border-b-2 border-dashed ">
+              Select Your Seat
+            </h3>
+            <div class="flex max-sm:flex-col flex-row justify-between py-4 border-b-2  border-dashed">
+              <div class="text-raleway font-bold flex items-center gap-2">
+                <img src="images/seat-gray.png" alt="icon" />
+                <p>Available</p>
+              </div>
+              <div class="text-raleway font-bold flex items-center gap-2 text-green-500">
+                <img src="images/seat-green-filled.png" alt="" />
+                <p>Selected</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-5 gap-x-8 gap-y-10 items-center justify-center my-10">
+              <div class="kbd bg-gray-200 col-start-5 cursor-not-allowed">
+                <img src="images/steering-wheel.png" alt="" />
+              </div>
+            </div>
+            <div class="grid grid-cols-10 gap-x-8 gap-y-5 items-center justify-center">
+              <div>A</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700 ">
+                A1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                A2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                A3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                A4
+              </button>
+              <div>B</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                B1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                B2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                B3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                B4
+              </button>
+              <div>C</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                C1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                C2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                C3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                C4
+              </button>
+              <div>D</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                D1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                D2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                D3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                D4
+              </button>
+              <div>E</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                E1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                E2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                E3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                E4
+              </button>
+              <div>F</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                F1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                F2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                F3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                F4
+              </button>
+              <div>G</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                G1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                G2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                G3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                G4
+              </button>
+              <div>H</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                H1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                H2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                H3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                H4
+              </button>
+              <div>I</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                I1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                I2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                I3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                I4
+              </button>
+              <div>J</div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                J1
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                J2
+              </button>
+              <div></div>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                J3
+              </button>
+              <button class="seat py-3 kbd  cursor-pointer col-span-2 bg-gray-200 hover:text-white hover:bg-green-700">
+                J4
+              </button>
+            </div>
+          </div>
+
+          <div class="flex flex-col p-4 rounded-lg">
+            <h3 class="text-2xl text-raleway font-semibold text-black pb-4 border-b-2 border-gray-300 border-dashed">
+              Select Your Seat
+            </h3>
+            <div class="mt-8 bg-slate-100 rounded-lg py-5">
+              <div class="overflow-x-auto">
+                <table class="table">
+                  <thead class="text-base text-black border-b-2 border-gray-300 border-dashed pb-2">
+                    <tr>
+                      <th>
+                        Seat
+                        <span id="total-seats-selected" class="bg-green-500 text-white px-1 
+                         rounded ml-1">0</span>
+                      </th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody id="seats-details" class="border-b-2 border-gray-300 pb-2"></tbody>
+                  <tbody class="text-base text-black">
+                    <tr>
+                      <th>Total</th>
+                      <th></th>
+                      <th>BDT <span id="total">0</span></th>
+                    </tr>
+                    <tr id="discount-row"></tr>
+                    <tr id="for-hide">
+                      <th colspan="3">
+                        <div id="coupon-container" class="bg-white flex justify-between p-2 m-2 rounded-lg">
+                          <input id="coupon" type="text" placeholder="Coupon: 4 seats"
+                            class="p-3 border-none outline-none" />
+                          <button id="coupon-btn" class="btn bg-green-500 text-white hover:bg-green-600">
+                            Apply
+                          </button>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>Grand Total</th>
+                      <th></th>
+                      <th>BDT <span id="grand-total">0</span></th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- Bus Form -->
+            <div class="mt-10 space-y-2">
+              <h3>Passenger Name*</h3>
+              <label class="input input-bordered flex items-center gap-2">
+                <input id="name" type="text" class="grow" placeholder="Enter your name" />
+              </label>
+              <h3>Phone number*</h3>
+              <label class="input input-bordered flex items-center gap-2">
+                <input id="phone" class="grow" placeholder="Enter your phone number" />
+              </label>
+              <h3>Email ID</h3>
+              <label class="input input-bordered flex items-center gap-2">
+                <input id="email" type="email" class="grow" placeholder="Enter your email id" />
+              </label>
+              <div>
+                <label disabled for="modal-pop-up" id="next-btn"
+                  class="btn w-full mt-10 bg-green-500 hover:bg-green-600 text-white   ">Next</label>
+
+                <div class="flex justify-center gap-10 mt-4 text-gray-500">
+                  <div>
+                    <a href="#">Tearms & conditions</a>
+                  </div>
+                  <div>
+                    <a href="#">Refund Policy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-black py-20">
+    <div class="md:w-10/12 mx-auto w-full px-2 md:px-4">
+      <div
+        class="footer items-center justify-between p-4 pb-10 bg-transparent text-neutral-content border-b border-gray-700 border-dashed">
+        <div class="items-start flex flex-col gap-6">
+          <a class="lg:text-4xl md:text-3xl text-2xl font-extrabold cursor-pointer text-green-500">Trust-Travel</a>
+          <p class="max-w-xs">
+            Trust-Travel is a digital platform to make your daily commuting
+            better.
+          </p>
+        </div>
+        <div class="items-start flex flex-col gap-2">
+          <p class="max-w-xs px-3">Download our app</p>
+          <a href="#"><img src="images/google_play_logo.png" alt="" class="h-[56px] w-auto" /></a>
+        </div>
+      </div>
+      <div class="footer items-center justify-between p-4 bg-transparent text-neutral-content">
+        <div class="items-start flex flex-col gap-6">
+          <p class="max-w-lg text-gray-500">
+            @all rights reserved, Trust-Travel services limited.2024
+          </p>
+        </div>
+        <div class="items-start flex gap-6">
+          <a href="#">Terms & Condition</a>
+          <a href="#">Return & refund policy</a>
+          <a href="#">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal pop up -->
+  <section>
+    <input type="checkbox" id="modal-pop-up" class="modal-toggle" />
+    <div class="modal" role="dialog">
+      <div class="modal-box flex items-center flex-col gap-4 text-center">
+        <img src="images/success.png" alt="" class="pb-2" />
+        <h3 class="text-2xl text-green-500 font-bold uppercase">Success</h3>
+        <p class="text-black text-lg">
+          Thank you for Booking Our Bus Seats. We are working hard to find the
+          best service and deals for you.
+        </p>
+        <p class="py-1 text-gray-400">
+          Shortly you will find a confirmation in your email.
+        </p>
+        <a href="index.html"><button class="rounded-2xl bg-green-500 text-white px-20 py-2">Continue</button></a>
+      </div>
+      <label class="modal-backdrop" for="modal-pop-up">Close</label>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
