@@ -139,7 +139,11 @@ nextBtnElement.addEventListener("click", function () {
       "text-white"
     );
     seatEle.classList.remove();
-    seatEle.classList.add("cursor-pointer", "bg-gray-200");
+    seatEle.classList.add(
+      "cursor-pointer",
+      "bg-gray-200",
+      "hover:bg-green-700"
+    );
     nextBtnElement.setAttribute("disabled", "");
   }
 });
